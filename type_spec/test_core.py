@@ -1,6 +1,6 @@
 import pytest
-from test.type_spec import typeSpec
-import test.type_spec as t
+from type_spec import typeSpec
+import type_spec as t
 
 class Data:
     def __init__(self, data):
@@ -123,7 +123,7 @@ def test_type_check_type():
     assert t.type_check(5, bool) == 'must be of type bool'
 
     assert t.type_check(Data(5), Data) == None
-    assert t.type_check('foobar', Data) == 'must be of type test.test_type_spec.Data'
+    assert t.type_check('foobar', Data) == 'must be of type type_spec.test_core.Data'
 
 def test_type_check_custom_check():
     assert t.type_check(MyNumber(5), MyNumber) == None
@@ -166,7 +166,7 @@ def test_type_check_example():
     assert t.type_check(5, 1.3) == 'must be of type float'
     assert t.type_check('foo', 'bar') == None
     assert t.type_check(MyNumber(3), MyNumber(5)) == None
-    assert t.type_check(3, MyNumber(5)) == 'must be of type test.test_type_spec.MyNumber'
+    assert t.type_check(3, MyNumber(5)) == 'must be of type type_spec.test_core.MyNumber'
 
 def test_typeSpec():
     div(3, 4)
