@@ -5,6 +5,8 @@ and return values.
 
 ## Example Usage
 
+A function that takes built-in types:
+
 ```python
 from type_spec import typeSpec
 
@@ -12,6 +14,8 @@ from type_spec import typeSpec
 def add(a, b):
   return a + b
 ```
+
+A function that takes any of a number of built in types with certain constraints:
 
 ```python
 from type_spec import typeSpec, AllOf, AnyOf, type_check
