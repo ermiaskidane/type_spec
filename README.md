@@ -55,5 +55,6 @@ The arguments/types provided to typeSpec can be any of the following:
 * A `dict` instance that specifies that a valid value must be a dictionary with a certain structure, i.e. `{'name': str, 'enabled': bool}`
 * A `list` instance that specifies that a valid value must be a list with items of a certain
 type, i.e. `[str]`.
-* A predicate function that returns True or False, i.e. `lambda n: n > 0`
+* A predicate function that returns True or False, i.e. `lambda n: n > 0`. Note that you
+can use the `callable` built-in predicate function to type check functions.
 * An example value/instance, i.e. `None`, `"2017-01-01"`. This means the value needs to be an instance of the same type as the example value.
