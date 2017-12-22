@@ -3,6 +3,12 @@
 This is a python module that type checks for Python function arguments
 and return values.
 
+## Installation
+
+```
+pip install type_spec
+```
+
 ## Example Usage
 
 A function that takes built-in types:
