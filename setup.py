@@ -7,7 +7,7 @@ setup(
     author = 'Peter Marklund',
     author_email = 'peter@marklunds.com',
     url = 'https://github.com/peter/type_spec',
-    download_url = 'https://github.com/peter/type_spec/tarball/0.1',
+    download_url = 'https://github.com/peter/type_spec/archive/0.1.tar.gz',
     keywords = ['types', 'typing', 'testing', 'contract'],
     classifiers = [],
 )
