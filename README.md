@@ -58,3 +58,7 @@ type, i.e. `[str]`.
 * A predicate function that returns True or False, i.e. `lambda n: n > 0`. Note that you
 can use the `callable` built-in predicate function to type check functions.
 * An example value/instance, i.e. `None`, `"2017-01-01"`. This means the value needs to be an instance of the same type as the example value.
+
+## Prior Art
+
+* [typeannotations](https://github.com/ceronman/typeannotations) - uses the elegant approach of overriding `isinstance` for its type checks (through metaclasses) along with the built-in Python 3 type annotation syntax.
