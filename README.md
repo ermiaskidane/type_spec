@@ -59,6 +59,7 @@ type, i.e. `[str]`.
 can use the `callable` built-in predicate function to type check functions.
 * An example value/instance, i.e. `None`, `"2017-01-01"`. This means the value needs to be an instance of the same type as the example value.
 
-## Prior Art
+## Resources
 
 * [typeannotations](https://github.com/ceronman/typeannotations) - uses the elegant approach of overriding `isinstance` for its type checks (through metaclasses) along with the built-in Python 3 type annotation syntax.
+* [PEP 362 - Function Signature Object - annotation checker](https://www.python.org/dev/peps/pep-0362/#annotation-checker)
